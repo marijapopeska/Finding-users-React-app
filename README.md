@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+![Users](https://github.com/marijapopeska/Finding-users-React-app/assets/108872423/35fc0923-db65-4316-b52d-da5047f754c5)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quick User Connections
 
-## Available Scripts
+Quick User Connections is a React application that allows you to search and connect with users quickly. With a clean and intuitive interface, you can easily search for users based on their names and establish connections in no time.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Search Users: The app provides a search bar where you can enter the name of the user you are looking for. As you type, the app dynamically filters the user list to display matching results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* User Cards: The search results are presented in a visually appealing card format. Each card includes the user's name, email address, and a unique avatar generated based on their email.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* API Integration: The app fetches user data from the JSONPlaceholder API. It retrieves a list of users and updates the user list in real-time based on the search query.
 
-### `npm test`
+## About the Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* The App component serves as the main entry point of the application. It imports and renders the Cards component.
 
-### `npm run build`
+* The Cards component is responsible for fetching user data from the API and rendering the user cards. It manages the state for the list of users and the search term entered by the user. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The Users component receives a user object as a prop and renders the user card. It displays the user's name, email, and an avatar generated using the user's email address.
