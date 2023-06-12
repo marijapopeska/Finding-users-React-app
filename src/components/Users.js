@@ -5,9 +5,9 @@ const Users = ({user}) => {
         <div key={user.id} className="card">
             <img
                 className="user-img"
-                src={`https://robohash.org/${user.email}`}
-                alt="Robohash"
-                style={{ width: "50%" }}
+                src={`https://avatars.dicebear.com/api/adventurer/co.uk.${user.email}.svg`}
+                alt="avatar"
+                style={{ width: "100%" }}
             />
             <div className="info">
                 <h3>{user.name}</h3>
